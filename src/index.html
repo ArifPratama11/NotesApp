@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <app-bar app-title="Notes App" subtitle="Catat ide dan tugasmu di sini"></app-bar>
+
+    <main class="layout">
+      <section class="layout__form" aria-labelledby="form-heading">
+        <h2 id="form-heading" class="section-title">Tambah Catatan</h2>
+        <note-form></note-form>
+      </section>
+
+      <div class="layout__list">
+        <section aria-labelledby="list-heading">
+          <h2 id="list-heading" class="section-title">
+            Daftar Catatan <span id="notes-count" class="badge">0</span>
+          </h2>
+          <note-list
+            id="active-notes"
+            empty-text="Belum ada catatan. Yuk, tambahkan catatan pertamamu!"
+          ></note-list>
+        </section>
+
+        <section aria-labelledby="archive-heading">
+          <h2 id="archive-heading" class="section-title">
+            Arsip <span id="archived-count" class="badge">0</span>
+          </h2>
+          <note-list
+            id="archived-notes"
+            empty-text="Belum ada catatan yang diarsipkan."
+          ></note-list>
+        </section>
+      </div>
+    </main>
+
+    <app-footer
+      text="Dibuat dengan Web Component &mdash; Submission Dicoding"
+    ></app-footer>
+    <loading-indicator label="Memuat…"></loading-indicator>
+  </body>
+</html>
