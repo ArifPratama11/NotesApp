@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Notes App — Integrasi RESTful API
 
 Aplikasi catatan berbasis Web Component yang menyimpan data di
@@ -34,4 +33,4 @@ Butuh Node.js 18.12 atau lebih baru.
     webpack.common.js / webpack.dev.js / webpack.prod.js
 =======
 # NotesApp
->>>>>>> a749be8328e3303f65c7e6c0882b110168b8559a
+
